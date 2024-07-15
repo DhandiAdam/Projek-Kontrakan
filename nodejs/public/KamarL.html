@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing Information</title>
+    <link rel="stylesheet" href="css/forum.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Isi Data Penyewaan Kontrakan</h1>
+      <form id="kontrak-form">
+        <div class="form-group">
+          <label for="nama">Name:</label>
+          <input type="text" id="nama" name="nama" required />
+        </div>
+        <div class="form-group">
+          <label for="Telephone">Telephone:</label>
+          <input type="text" id="Telephone" name="Telephone" required />
+        </div>
+        <div class="form-group">
+          <label for="Alamat_Kontrakan">Alamat Kontrakan:</label>
+          <input
+            type="text"
+            id="Alamat_Kontrakan"
+            name="Alamat_Kontrakan"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="Tipe">Tipe:</label>
+          <input
+            type="text"
+            id="Tipe"
+            name="Tipe"
+            value="Tipe L"
+            required
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="Biaya">Biaya Sewa:</label>
+          <input
+            type="text"
+            id="Biaya"
+            name="Biaya"
+            value="800000.00"
+            required
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="tanggal_mulai">Tanggal Mulai:</label>
+          <input type="date" id="tanggal_mulai" name="tanggal_mulai" required />
+        </div>
+        <div class="form-group">
+          <label for="tanggal_akhir">Tanggal Akhir:</label>
+          <input type="date" id="tanggal_akhir" name="tanggal_akhir" required />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="js/KamarL.js"></script>
+  </body>
+</html>

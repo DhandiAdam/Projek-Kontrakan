@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Food</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <!-- <link rel="stylesheet" href="css/input.css" /> -->
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <a href="#" class="mr-auto">
+          <img src="assets/Logo.png" alt="Logo" class="h-20" />
+        </a>
+        <!-- Navbar -->
+        <nav>
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-4-line text-4xl text-primary"></i>
+          </div>
+
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Wrapper -->
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+      <!-- Grid Image -->
+      <div
+        class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
+      ></div>
+      <!-- Hero -->
+      <section
+        class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
+      >
+        <div
+          class="container mx-auto h-full flex items-center justify-center xl:justify-start"
+        >
+          <div
+            class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
+          >
+            <h1 class="h1 mb-8 text-white">ORDER WOY</h1>
+            <p class="text-white mb-8">
+              Restoran yang menyajikan makanan secara online memiliki banyak
+              menu yang bisa dipilih. Makanan ini tentunya penuh dengan gizi dan
+              memiliki rasa yang lezat
+            </p>
+            <button class="btn btn-primary mx-auto xl:mx-0">
+              Menu Makanan
+              <i class="ri-arrow-right-fill text-accent"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Steps -->
+      <section class="steps mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto">
+          <!-- Grid Items -->
+          <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+            <!-- Informasi Perusahaan -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-file-info-fill text-5xl text-accent"></i>
+              </div>
+              <h3 class="h-3 mb-8">Info Perusahaan</h3>
+              <p id="moreText" class="hidden text-xl">
+                Restoran kami mengandalkan layanan makanan online untuk
+                menjangkau pelanggan yang lebih luas, menghadirkan hidangan
+                lezat langsung ke pintu rumah Anda. Dengan kemudahan pemesanan
+                melalui aplikasi dan situs web kami, Anda dapat menikmati
+                berbagai pilihan menu kami tanpa harus keluar rumah. Kami
+                berkomitmen untuk memberikan pengalaman kuliner yang terbaik
+                dengan kualitas makanan yang selalu segar dan pengiriman yang
+                cepat
+              </p>
+              <button
+                class="main_btn text-black hover:text-accent font-bold py-2 rounded- mb-8 mx-auto"
+                onclick="ReadText()"
+              >
+                More Detail
+              </button>
+            </div>
+            <!-- Orderan -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-inbox-2-fill text-5xl text-accent"></i>
+              </div>
+              <h3 class="h-3 mb-8">Order Paket</h3>
+              <p id="orderan" class="hidden text-xl">
+                Nikmati hidangan favorit Anda tanpa antri panjang. Kami
+                menyarankan untuk memesan lebih awal, terutama saat jam sibuk,
+                untuk memastikan pengalaman makan yang lebih lancar dan nyaman.
+                Klik tombol untuk melihat paket
+                <a href="#" class="text-blue-300"></a>
+              </p>
+              <button
+                class="Orderan text-black hover:text-accent font-bold py-2 rounded- mb-8 mx-auto"
+                onclick="Someone()"
+              >
+                More Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Temporary Div -->
+      <div class="h-[3000px]"></div>
+    </main>
+
+    <!-- Scroll Reveal JS -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- Swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

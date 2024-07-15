@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontrakan H.indu</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <!-- <link rel="stylesheet" href="css/input.css" /> -->
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- <style>
+            .hidden {
+        display: none;
+      }
+
+      .popup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 50;
+      }
+
+      .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        width: 90%;
+      }
+
+      .popup-content h2 {
+        margin-bottom: 15px;
+      }
+
+      .popup-content p {
+        margin-bottom: 10px;
+      }
+
+      .popup-content .buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .popup-content .buttons button {
+        margin: 5px;
+      }
+
+      .img-centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    </style> -->
+  </head>
+  <body class="bg-gray-200">
+    <!-- Header -->
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <a href="#" class="mr-2 h-16 w-10">
+          <img src="assets/Logo.png" alt="Logo" class="h-20" />
+        </a>
+        <!-- <h1 class="text-xl">H.Indu</h1> -->
+        <!-- Navbar -->
+        <nav class="ml-auto">
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-4-line text-4xl text-primary"></i>
+          </div>
+
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[900px] left-0 right-0 flex flex-col gap-3 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Informasi">Informasi</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#FavoriteMenu">Favorite Kontrakan</a></li>
+            <li><a href="#Reservasi">Penyewaan_kost</a></li>
+            <li><a href="#Tempat">Alamat</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Wrapper -->
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+      <!-- Grid Image -->
+      <div
+        class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
+      ></div>
+      <!-- Hero -->
+      <section
+        id="home"
+        class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20 bg-black-[400px]"
+      >
+        <div
+          class="container mx-auto h-full flex items-center justify-center xl:justify-start"
+        >
+          <div
+            class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
+          >
+            <h1 class="h1 mb-8 text-white">Mau cari kos?</h1>
+            <p class="text-white mb-8">
+              Dapatkan infonya dan langsung sewa di H.Indu
+            </p>
+
+            <a href="#Reservasi"
+              ><button class="btn btn-primary mx-auto xl:mx-0">
+                Lihat Kontrakan
+                <i class="ri-arrow-right-fill text-accent"></i></button
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Icon 3 -->
+      <section
+        id="Informasi"
+        class="steps mt-[80px] xl:mt-[200px] relative z-20"
+      >
+        <h2 class="steps__step mx-auto h2 text-center mb-8 mx-auto">
+          Informasi
+        </h2>
+        <div class="container mx-auto">
+          <!-- Grid Items -->
+          <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+            <!-- Informasi Perusahaan -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-file-info-fill text-5xl text-accent"></i>
+              </div>
+              <h3 class="h-3 mb-8">Informasi Perusahaan</h3>
+              <p id="moreText" class="hidden text-xl">
+                Kontrakan H. Indu adalah bisnis penyewaan yang menyediakan
+                rumah-rumah dengan berbagai tipe, mulai dari dua hingga 4
+                ruangan. Berawal dari ide H. Indu sebagai seorang pribumi yang
+                melihat perkembangan perusahaan di daerah Cikarang. Oleh karena
+                itu dalam mengembangkan bisnisnya tidak hanya memenuhi kebutuhan
+                tempat tinggal para pekerja rantauan, tetapi juga berkontribusi
+                pada pertumbuhan ekonomi lokal bekasi.
+              </p>
+              <button
+                class="main_btn text-black hover:text-accent font-bold py-2 rounded- mb-8 mx-auto"
+                onclick="ReadText()"
+              >
+                More Detail
+              </button>
+            </div>
+            <!-- Orderan -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-home-7-fill text-5xl text-accent"></i>
+              </div>
+              <h3 class="h-3 mb-8">Sewa Kontrakan</h3>
+              <p id="orderan" class="hidden text-xl">
+                Selamat Datang di Kontrakan H. Indu Kami adalah solusi terbaik
+                untuk kebutuhan tempat tinggal Anda di Bekasi dan sekitarnya.
+                Bisnis penyewaan kontrakan kami menyediakan berbagai tipe rumah
+                yang nyaman dan aman, mulai dari dua hingga empat ruangan, yang
+                cocok untuk berbagai kebutuhan penyewa.
+
+                <a href="Pembelian.html" class="text-blue-900"
+                  >Order Sekarang</a
+                >
+              </p>
+              <button
+                class="Orderan text-black hover:text-accent font-bold py-2 rounded- mb-8 mx-auto"
+                onclick="Orderan()"
+              >
+                More Detail
+              </button>
+            </div>
+            <!-- Reservasi -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-shake-hands-fill text-5xl text-accent"></i>
+              </div>
+              <h3 class="h-3 mb-8">Reservasi</h3>
+              <p id="reservasi" class="hidden text-xl">
+                <span class="font-bold text-black hover:text-accent"
+                  >Hubungi Kami</span
+                >
+                <br />
+                Kami siap membantu Anda menemukan tempat tinggal yang ideal.
+                Jangan ragu untuk menghubungi kami untuk informasi lebih lanjut
+                mengenai ketersediaan unit dan detail penyewaan.
+                <button
+                  id="waButton"
+                  class="text-blue-800 font-bold py-2 mb-8 mx-auto hover:text-accent"
+                  onclick="redirectToWhatsApp()"
+                >
+                  Contact via WhatsApp
+                </button>
+              </p>
+              <button
+                class="Reservasi text-black hover:text-accent font-bold py-2 rounded- mb-8 mx-auto"
+                onclick="Reservasi()"
+              >
+                More Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto xl:px-0">
+          <div
+            class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]"
+          >
+            <div
+              class="about__text flex-1 order-2 xl:order-none max-w-xl xl:max-w-[410px] flex flex-col items-center xl:items-start gap-8"
+            >
+              <h2 class="h2">Nikmati Kamar Yang Bersih dan nyaman</h2>
+              <p>
+                Selamat datang di Kontrakan H. Indu!
+                <br />
+                Kami menyediakan pilihan kontrakan yang nyaman dan terjangkau di
+                lokasi strategis. Dengan fasilitas lengkap dan lingkungan yang
+                aman, Kontrakan H. Indu adalah pilihan ideal bagi Anda yang
+                mencari hunian sementara atau jangka panjang. Kami berkomitmen
+                untuk memberikan pelayanan terbaik dan memastikan Anda merasa
+                seperti di rumah sendiri.
+                <br />
+                Temukan kontrakan impian Anda bersama kami!
+              </p>
+            </div>
+            <!-- Image -->
+            <div
+              class="about__img order-1 xl:order-none max-w-[453px] mx-auto xl:max-w-none xl:mx-0"
+            >
+              <img
+                class="rounded-bl-[50px] rounded-tr-[60px]"
+                src="https://www.saniharto.com/assets/news/Desain_Kamar_Tidur_Mewah_dan_Elegan.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu Favorite -->
+      <section
+        id="FavoriteMenu"
+        class="Favorite mt-[100px] xl:mt-[200px] relative z-20"
+      >
+        <div
+          class="Favorite__bg container mx-auto bg-accent-secondary rounded-[70px] px-6 py-12"
+        >
+          <h2 class="Favorite__title text-center mb-12 text-4xl font-bold h2">
+            Kamar Favorite
+          </h2>
+          <!-- Slidder -->
+          <div class="w-full">
+            <div class="Favorite__slider swiper h-auto">
+              <div class="swiper-wrapper">
+                <!-- Tipe S -->
+                <div class="swiper-slide">
+                  <!-- Items -->
+                  <div
+                    class="Favorite__item w-full max-w-[400px] bg-white rounded-[30px] flex flex-col items-center p-4 mx-auto h-auto"
+                  >
+                    <div class="text-center">
+                      <img
+                        class="w-[200px] h-auto mb-3 rounded-[30px] flex"
+                        src="https://4.bp.blogspot.com/-ohVdecd0wZg/TxPmxEiOwSI/AAAAAAAAAC4/OU6rj7LZoKs/s1600/003_2767.jpg"
+                        alt="Sate Ayam"
+                      />
+                      <h3 class="text-xl font-semibold mb-2 h3">Tipe s</h3>
+                    </div>
+                    <p class="text-sm text-gray-700">
+                      Luas, elegan, dan mewah dengan tempat tidur king-size, AC,
+                      kamar mandi dalam, dan Wi-Fi gratis. Nikmati kenyamanan
+                      maksimal!
+                    </p>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <!-- Items -->
+                  <div
+                    class="Favorite__item w-full max-w-[400px] bg-white rounded-[30px] flex flex-col items-center p-4 mx-auto"
+                  >
+                    <div class="text-center">
+                      <img
+                        class="w-[200px] h-auto mb-3 rounded-[30px] flex"
+                        src="https://www.umn.ac.id/wp-content/uploads/2022/09/Kost.jpg"
+                        alt="Kebab"
+                      />
+                      <h3 class="text-xl font-semibold mb-2 h3">Tipe L</h3>
+                    </div>
+                    <p class="text-sm text-gray-700">
+                      Nyaman dan luas dengan tempat tidur queen-size, AC, kamar
+                      mandi dalam, dan Wi-Fi gratis. Ideal untuk istirahat
+                      sempurna!
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                  <!-- Items -->
+                  <div
+                    class="Favorite__item w-full max-w-[400px] bg-white rounded-[30px] flex flex-col items-center p-4 mx-auto"
+                  >
+                    <div class="text-center">
+                      <img
+                        class="w-[200px] h-auto mb-3 rounded-[30px] flex"
+                        src="https://asset-3.tstatic.net/jualbeli/img/njajal/2021/9/Ide-Dekorasi-Kamar-Kos-Minimalis-untuk-Laki-laki--Cek-Harganya-di-DKI-Jakarta-master-556381413.jpg"
+                      />
+                      <h3 class="text-xl font-semibold mb-2 h3">Tipe LL</h3>
+                    </div>
+                    <p class="text-sm text-gray-700">
+                      Praktis dan nyaman dengan tempat tidur double, kipas
+                      angin, kamar mandi dalam, dan Wi-Fi gratis. Pilihan tepat
+                      untuk tinggal hemat!
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                  <!-- Items -->
+                  <div
+                    class="Favorite__item w-full max-w-[400px] bg-white rounded-[30px] flex flex-col items-center p-4 mx-auto"
+                  >
+                    <div class="text-center">
+                      <img
+                        class="w-[200px] h-auto mb-3 rounded-bl-[40px] rounded-tr-[40px] flex"
+                        src="https://images.rukita.co/buildings/building/60e7b737-731.jpg"
+                        alt="Daging"
+                      />
+                      <h3 class="text-xl font-semibold mb-2 h3">Tipe C</h3>
+                    </div>
+                    <p class="text-sm text-gray-700">
+                      Murah dan nyaman dengan tempat tidur single, kipas angin,
+                      kamar mandi bersama, dan Wi-Fi gratis. Hemat tanpa
+                      mengorbankan kenyamanan!
+                    </p>
+                  </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                  <!-- Items -->
+                  <div
+                    class="Favorite__item w-full max-w-[400px] bg-white rounded-[30px] flex flex-col items-center p-4 mx-auto"
+                  >
+                    <div class="text-center">
+                      <img
+                        class="w-[200px] h-auto mb-3 rounded-[40px] flex"
+                        src="https://cove-blog-id.sgp1.cdn.digitaloceanspaces.com/cove-blog-id/2022/12/cove-tangerang.jpeg"
+                      />
+                      <h3 class="text-xl font-semibold mb-2 h3">Tipe B</h3>
+                    </div>
+                    <p class="text-sm text-gray-700">
+                      Luas dan lengkap dengan tempat tidur king-size, AC, dapur
+                      kecil, kamar mandi dengan bathtub, dan Wi-Fi gratis.
+                      Sempurna untuk kenyamanan total!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kost-->
+      <section
+        id="Reservasi"
+        class="Reservasi mt-[80px] xl:mt-[150px] relative z-20"
+      >
+        <div class="container mx-auto xl:px-0">
+          <!-- Text -->
+          <div class="text-center mb-24">
+            <h2 class="Reservasi__title h2 mb-4">Penyewaan Tempat</h2>
+            <p class="Reservasi__subtitle max-w-3xl mx-auto">
+              Temukan kenyamanan hunian idaman Anda di Kontrakan H. Indu.
+              Hubungi kami untuk informasi lebih lanjut dan segera lakukan
+              reservasi. Kamar terbatas, jangan sampai kehabisan!
+            </p>
+          </div>
+          <!-- Grid -->
+          <div
+            class="Makanan__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]"
+          >
+            <!-- Item 1 -->
+            <div class="w-full max-w-[548px] h-full mx-auto text-center">
+              <img
+                class="mb-6 rounded-tr-[40px] rounded-tl-[120px] rounded-br-[120px] w-[500px] h-[300px] mx-auto"
+                src="https://asset2.morefurniture.id/NEWS/2024/2/Desain%20Kamar%20Tidur%20Minimalis%20Kamar%20Tidur%20Fungsional.jpg"
+                alt="Desain Kamar Tidur Minimalis"
+              />
+              <div class="flex justify-between items-center w-full mb-3">
+                <div class="text-center w-full">
+                  <h3 class="h3 text-lg font-bold">Kamar Tipe B</h3>
+                  <p class="text-gray-600">
+                    Cek Informasi Lengkap dengan klik button
+                  </p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full flex justify-center items-center"
+                  onclick="openPopup()"
+                >
+                  <i class="ri-arrow-right-s-line text-3xl text-primary"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Popup -->
+            <div
+              id="popup"
+              class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+            >
+              <div class="bg-white pb-9 rounded-lg max-w-4xl w-full mx-4">
+                <h2 class="text-2xl font-bold mb-4">Detail Kamar Tipe B</h2>
+                <img
+                  class="mb-6 rounded-tr-[40px] rounded-tl-[120px] rounded-br-[120px] w-[700px] h-[400px] mx-auto"
+                  src="https://asset2.morefurniture.id/NEWS/2024/2/Desain%20Kamar%20Tidur%20Minimalis%20Kamar%20Tidur%20Fungsional.jpg"
+                  alt="Desain Kamar Tidur Minimalis"
+                />
+                <ul class="list-disc pl-3 gap-3 grid grid-cols-2">
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH73nZDvckMvtGvvKdkrhkCv3NidZwW6EbzA&s"
+                      width="50px"
+                      height="50px"
+                      alt="AC"
+                    />
+                    <span class="p-4">AC</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://w7.pngwing.com/pngs/441/133/png-transparent-noguchi-table-computer-icons-long-table-angle-furniture-rectangle-thumbnail.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Meja</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://w7.pngwing.com/pngs/359/522/png-transparent-computer-icons-pillow-cushion-pillow-furniture-rectangle-black.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Bantal</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      width="50px"
+                      height="50px"
+                      src="https://e7.pngegg.com/pngimages/409/160/png-clipart-window-blinds-shades-computer-icons-window-shutter-infisso-shutter-furniture-rectangle.png"
+                      alt="Jendela"
+                    />
+                    <span class="p-4">Jendela</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://e7.pngegg.com/pngimages/888/251/png-clipart-bedroom-computer-icons-house-sleep-bed-kitchen-mattress.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Kasur</span>
+                  </li>
+                  <li class="flex items-center space-x-2 h-20">
+                    <img
+                      src="https://cdn.icon-icons.com/icons2/568/PNG/512/wardrobe_4_icon-icons.com_54419.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Lemari Baju</span>
+                  </li>
+                  <span class="price"
+                    >Jl. Nangka Raya No.14, RT.5/RW.5, Tj. Bar., Kec. Jagakarsa,
+                    Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12530
+                  </span>
+                  <span class="price">Rp.1.500,000 /Bulan </span>
+                  <span></span>
+                </ul>
+
+                <div class="flex justify-between mt-4 p-3">
+                  <button
+                    class="bg-green-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="sewaSekarang()"
+                  >
+                    Sewa Sekarang
+                  </button>
+                  <button
+                    class="bg-blue-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="tanyaAdmin()"
+                  >
+                    Tanya Admin
+                  </button>
+                  <button
+                    class="bg-red-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="closePopup()"
+                  >
+                    Tutup
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="w-full max-w-[548px] h-full mx-auto text-center">
+              <img
+                class="mb-6 rounded-tr-[40px] rounded-tl-[120px] rounded-br-[120px] w-[500px] h-[300px] mx-auto"
+                src="https://4.bp.blogspot.com/-ohVdecd0wZg/TxPmxEiOwSI/AAAAAAAAAC4/OU6rj7LZoKs/s1600/003_2767.jpg"
+                alt="Desain Kamar Tidur Minimalis"
+              />
+              <div class="flex justify-between items-center w-full mb-3">
+                <div class="text-center w-full">
+                  <h3 class="h3 text-lg font-bold">Kamar Tipe S</h3>
+                  <p class="text-gray-600">
+                    Cek Informasi Lengkap dengan klik button
+                  </p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full flex justify-center items-center"
+                  onclick="TipeS()"
+                >
+                  <i class="ri-arrow-right-s-line text-3xl text-primary"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Popup 2-->
+            <div
+              id="TipeS"
+              class="hidden c fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+            >
+              <div class="bg-white pb-9 rounded-lg max-w-4xl w-full mx-4">
+                <h2 class="text-2xl font-bold mb-4">Detail Kamar Tipe S</h2>
+                <img
+                  class="mb-6 rounded-tr-[40px] rounded-tl-[120px] rounded-br-[120px] w-[700px] h-[400px] mx-auto"
+                  src="https://4.bp.blogspot.com/-ohVdecd0wZg/TxPmxEiOwSI/AAAAAAAAAC4/OU6rj7LZoKs/s1600/003_2767.jpg"
+                  alt="Desain Kamar Tidur Minimalis"
+                />
+                <ul class="list-disc pl-3 gap-3 grid grid-cols-2">
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH73nZDvckMvtGvvKdkrhkCv3NidZwW6EbzA&s"
+                      width="50px"
+                      height="50px"
+                      alt="AC"
+                    />
+                    <span class="p-4">AC</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://w7.pngwing.com/pngs/441/133/png-transparent-noguchi-table-computer-icons-long-table-angle-furniture-rectangle-thumbnail.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Meja</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://w7.pngwing.com/pngs/359/522/png-transparent-computer-icons-pillow-cushion-pillow-furniture-rectangle-black.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Bantal</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      width="50px"
+                      height="50px"
+                      src="https://e7.pngegg.com/pngimages/409/160/png-clipart-window-blinds-shades-computer-icons-window-shutter-infisso-shutter-furniture-rectangle.png"
+                      alt="Jendela"
+                    />
+                    <span class="p-4">Jendela</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://e7.pngegg.com/pngimages/888/251/png-clipart-bedroom-computer-icons-house-sleep-bed-kitchen-mattress.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Kasur</span>
+                  </li>
+                  <li class="flex items-center space-x-2 h-20">
+                    <img
+                      src="https://cdn.icon-icons.com/icons2/568/PNG/512/wardrobe_4_icon-icons.com_54419.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Lemari Baju</span>
+                  </li>
+                  <span class="price"
+                    >Jl. Lebak Bulus II, Cilandak Bar., Kec. Cilandak, Kota
+                    Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12430
+                  </span>
+                  <span class="price">Rp.500,000 /Bulan </span>
+                  <span></span>
+                </ul>
+
+                <div class="flex justify-between mt-4 p-3">
+                  <button
+                    class="bg-green-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="sewaSekarangS()"
+                  >
+                    Sewa Sekarang
+                  </button>
+                  <button
+                    class="bg-blue-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="tanyaAdmin()"
+                  >
+                    Tanya Admin
+                  </button>
+                  <button
+                    class="bg-red-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="closeTipeS()"
+                  >
+                    Tutup
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="w-full max-w-[548px] h-full mx-auto text-center">
+              <img
+                class="mb-6 rounded-tr-[40px] rounded-tl-[120px] rounded-br-[120px] w-[500px] h-[300px] mx-auto"
+                src="https://www.umn.ac.id/wp-content/uploads/2022/09/Kost.jpg"
+                alt="Desain Kamar Tidur Minimalis"
+              />
+              <div class="flex justify-between items-center w-full mb-3">
+                <div class="text-center w-full">
+                  <h3 class="h3 text-lg font-bold">Kamar Tipe L</h3>
+                  <p class="text-gray-600">
+                    Cek Informasi Lengkap dengan klik button
+                  </p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full flex justify-center items-center"
+                  onclick="TipeL()"
+                >
+                  <i class="ri-arrow-right-s-line text-3xl text-primary"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Popup 3-->
+            <div
+              id="TipeL"
+              class="hidden c fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+            >
+              <div class="bg-white pb-9 rounded-lg max-w-4xl w-full mx-4">
+                <h2 class="text-2xl font-bold mb-4">Detail Kamar Tipe L</h2>
+                <img
+                  class="mb-6 rounded-tr-[40px] rounded-tl-[120px] rounded-br-[120px] w-[700px] h-[400px] mx-auto"
+                  src="https://www.umn.ac.id/wp-content/uploads/2022/09/Kost.jpg"
+                  alt="Desain Kamar Tidur Minimalis"
+                />
+                <ul class="list-disc pl-3 gap-3 grid grid-cols-2">
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH73nZDvckMvtGvvKdkrhkCv3NidZwW6EbzA&s"
+                      width="50px"
+                      height="50px"
+                      alt="AC"
+                    />
+                    <span class="p-4">AC</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://w7.pngwing.com/pngs/441/133/png-transparent-noguchi-table-computer-icons-long-table-angle-furniture-rectangle-thumbnail.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Meja</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://w7.pngwing.com/pngs/359/522/png-transparent-computer-icons-pillow-cushion-pillow-furniture-rectangle-black.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Bantal</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      width="50px"
+                      height="50px"
+                      src="https://e7.pngegg.com/pngimages/409/160/png-clipart-window-blinds-shades-computer-icons-window-shutter-infisso-shutter-furniture-rectangle.png"
+                      alt="Jendela"
+                    />
+                    <span class="p-4">Jendela</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://e7.pngegg.com/pngimages/888/251/png-clipart-bedroom-computer-icons-house-sleep-bed-kitchen-mattress.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Kasur</span>
+                  </li>
+                  <li class="flex items-center space-x-2 h-20">
+                    <img
+                      src="https://cdn.icon-icons.com/icons2/568/PNG/512/wardrobe_4_icon-icons.com_54419.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Lemari Baju</span>
+                  </li>
+                  <span class="price"
+                    >Alamat: Jl. Bukit Duta 2, Tugu, Kec. Cimanggis, Kota Depok,
+                    Jawa Barat 16451
+                  </span>
+                  <span class="price">Rp.800,000 /Bulan </span>
+                  <span></span>
+                </ul>
+
+                <div class="flex justify-between mt-4 p-3">
+                  <button
+                    class="bg-green-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="sewaSekarangL()"
+                  >
+                    Sewa Sekarang
+                  </button>
+                  <button
+                    class="bg-blue-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="tanyaAdmin()"
+                  >
+                    Tanya Admin
+                  </button>
+                  <button
+                    class="bg-red-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="closeTipeL()"
+                  >
+                    Tutup
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="w-full max-w-[548px] h-full mx-auto text-center">
+              <img
+                class="mb-6 rounded-tr-[40px] rounded-tl-[120px] rounded-br-[120px] w-[500px] h-[300px] mx-auto"
+                src="https://asset-3.tstatic.net/jualbeli/img/njajal/2021/9/Ide-Dekorasi-Kamar-Kos-Minimalis-untuk-Laki-laki--Cek-Harganya-di-DKI-Jakarta-master-556381413.jpg"
+                alt="Desain Kamar Tidur Minimalis"
+              />
+              <div class="flex justify-between items-center w-full mb-3">
+                <div class="text-center w-full">
+                  <h3 class="h3 text-lg font-bold">Kamar Tipe LL</h3>
+                  <p class="text-gray-600">
+                    Cek Informasi Lengkap dengan klik button
+                  </p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full flex justify-center items-center"
+                  onclick="TipeLL()"
+                >
+                  <i class="ri-arrow-right-s-line text-3xl text-primary"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Popup 4-->
+            <div
+              id="TipeLL"
+              class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+            >
+              <div class="bg-white pb-9 rounded-lg max-w-4xl w-full mx-4">
+                <h2 class="text-2xl font-bold mb-4">Detail Kamar Tipe LL</h2>
+                <img
+                  class="mb-6 rounded-tr-[40px] rounded-tr-[120px] rounded-bl-[120px] w-[700px] h-[400px] mx-auto"
+                  src="https://asset-3.tstatic.net/jualbeli/img/njajal/2021/9/Ide-Dekorasi-Kamar-Kos-Minimalis-untuk-Laki-laki--Cek-Harganya-di-DKI-Jakarta-master-556381413.jpg"
+                  alt="Desain Kamar Tidur Minimalis"
+                />
+                <ul class="list-disc pl-3 gap-3 grid grid-cols-2">
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH73nZDvckMvtGvvKdkrhkCv3NidZwW6EbzA&s"
+                      width="50px"
+                      height="50px"
+                      alt="AC"
+                    />
+                    <span class="p-4">AC</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://w7.pngwing.com/pngs/441/133/png-transparent-noguchi-table-computer-icons-long-table-angle-furniture-rectangle-thumbnail.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Meja</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://w7.pngwing.com/pngs/359/522/png-transparent-computer-icons-pillow-cushion-pillow-furniture-rectangle-black.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Bantal</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      width="50px"
+                      height="50px"
+                      src="https://e7.pngegg.com/pngimages/409/160/png-clipart-window-blinds-shades-computer-icons-window-shutter-infisso-shutter-furniture-rectangle.png"
+                      alt="Jendela"
+                    />
+                    <span class="p-4">Jendela</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <img
+                      src="https://e7.pngegg.com/pngimages/888/251/png-clipart-bedroom-computer-icons-house-sleep-bed-kitchen-mattress.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Kasur</span>
+                  </li>
+                  <li class="flex items-center space-x-2 h-20">
+                    <img
+                      src="https://cdn.icon-icons.com/icons2/568/PNG/512/wardrobe_4_icon-icons.com_54419.png"
+                      width="50px"
+                      height="50px"
+                    />
+                    <span class="p-4">Lemari Baju</span>
+                  </li>
+                  <span class="price">KONTRAKAN H.DAUS </span>
+                  <span class="price">Rp.800,000 /Bulan </span>
+                  <span></span>
+                </ul>
+
+                <div class="flex justify-between mt-4 p-3">
+                  <button
+                    class="bg-green-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="sewaSekarangLL()"
+                  >
+                    Sewa Sekarang
+                  </button>
+                  <button
+                    class="bg-blue-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="tanyaAdmin()"
+                  >
+                    Tanya Admin
+                  </button>
+                  <button
+                    class="bg-red-500 text-slate-300 px-4 py-2 rounded"
+                    onclick="closeTipeLL()"
+                  >
+                    Tutup
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section
+        class="stats mt-[80px] xl:mt-[150px] relative z-15 bg-accent-secondary py-[80px] xl:py-[150px]"
+      >
+        <div class="container mx-auto">
+          <!-- Grid -->
+          <div class="grid grid-cols-1 xl:grid-cols-4 gap-12">
+            <!-- Grid item -->
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 text-6xl font-primary text-accent">1</h3>
+              <p>Tahun Pengalaman Penyewaan Kost</p>
+            </div>
+            <!-- Grid item -->
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 text-6xl font-primary text-accent">4</h3>
+              <p>Penyewaan Kost Terbaik</p>
+            </div>
+            <!-- Grid item -->
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 text-6xl font-primary text-accent">3</h3>
+              <p>Cabang diIndonesia</p>
+            </div>
+            <!-- Grid item -->
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 text-6xl font-primary text-accent">950</h3>
+              <p>Customer Senang</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tempat -->
+      <section id="Tempat" class="Tempat mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto px-0">
+          <!-- Text -->
+          <div class="max-w-[810px] mx-auto text-center mb-[52px]">
+            <h2 class="Tempat__title h2 mb-3">Tempat Penyewaan Kost Kami</h2>
+            <p class="Tempat__subtitle">
+              Tempat Penyewaan Kost kami dijamin bikin anda nyaman
+            </p>
+          </div>
+          <!-- Grid -->
+          <div class="Tempat__grid grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
+            <!-- Grid Item -->
+            <div
+              class="Tempat__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+            >
+              <img
+                class="rounded-t-[70px] mb-5 h-[250px]"
+                src="https://asset2.morefurniture.id/NEWS/2024/2/Desain%20Kamar%20Tidur%20Minimalis%20Kamar%20Tidur%20Fungsional.jpg"
+                alt=""
+              />
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="h3">Tempat Penyewaan Kost</h3>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-base">
+                  Jl. Nangka Raya No.14, RT.5/RW.5, Tj. Bar., Kec. Jagakarsa,
+                  Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12530
+                  Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta
+                  12730
+                </p>
+                <button
+                  class="bg-accent-secondary w-auto h-auto rounded-full group-hover:bg-white transition-all"
+                  onclick="TempatMewah1()"
+                >
+                  <i class="ri-arrow-right-s-line"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Grid Item 2 -->
+            <div
+              class="Tempat__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+            >
+              <img
+                class="rounded-t-[70px] mb-5 h-[250px]"
+                src="https://4.bp.blogspot.com/-ohVdecd0wZg/TxPmxEiOwSI/AAAAAAAAAC4/OU6rj7LZoKs/s1600/003_2767.jpg"
+                alt=""
+              />
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="h3 mb-2">Tempat Penyewaan Kost</h3>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-base">
+                  Jl. Lebak Bulus II, Cilandak Bar., Kec. Cilandak, Kota Jakarta
+                  Selatan, Daerah Khusus Ibukota Jakarta 12430
+                </p>
+                <button
+                  class="bg-accent-secondary w-auto h-auto rounded-full group-hover:bg-white transition-all"
+                  onclick="TempatMewah2()"
+                >
+                  <i class="ri-arrow-right-s-line"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Grid Item 3 -->
+            <div
+              class="Tempat__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+            >
+              <img
+                class="rounded-t-[70px] mb-5 h-[250px]"
+                src="https://www.umn.ac.id/wp-content/uploads/2022/09/Kost.jpg"
+                alt=""
+              />
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="h3 mb-2">Tempat Penyewaan Kost</h3>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-base">
+                  Alamat: Jl. Bukit Duta 2, Tugu, Kec. Cimanggis, Kota Depok,
+                  Jawa Barat 16451
+                </p>
+                <button
+                  class="bg-accent-secondary w-auto h-auto rounded-full group-hover:bg-white transition-all"
+                  onclick="TempatMewah3()"
+                >
+                  <i class="ri-arrow-right-s-line"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Grid Item 4 -->
+            <div
+              class="Tempat__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+            >
+              <img
+                class="rounded-t-[70px] mb-5 h-[250px]"
+                src="https://asset-3.tstatic.net/jualbeli/img/njajal/2021/9/Ide-Dekorasi-Kamar-Kos-Minimalis-untuk-Laki-laki--Cek-Harganya-di-DKI-Jakarta-master-556381413.jpg"
+                alt=""
+              />
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="h3 mb-2">Tempat Penyewaan Kost</h3>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-base">KONTRAKAN H.DAUS</p>
+                <button
+                  class="bg-accent-secondary w-auto h-auto rounded-full group-hover:bg-white transition-all"
+                  onclick="TempatMewah4()"
+                >
+                  <i class="ri-arrow-right-s-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        id="Contact"
+        class="Contact mt-[80px] xl:mt-[150px] relative z-20"
+      >
+        <div
+          class="Contact__container container mx-auto bg-primary sm:rounded-[70px] py-[80px]"
+        >
+          <div class="Contact__text max-w-[640px] mx-auto text-center">
+            <h2 class="Contact__title h2 mb-4 text-white">LET'S CONTACT NOW</h2>
+            <p
+              class="Contact__description text-white mb-8 max-w-sm xl:max-w-none mx-auto"
+            >
+              Jika anda membutuhkan bantuan, kami siap membantu anda. Silahkan
+              isi form di bawah ini.
+            </p>
+            <button class="btn btn-accent border mx-auto" onclick="Memesan()">
+              Contact Know <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto px-0">
+          <div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
+            <div
+              class="footer__item w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left"
+            >
+              <div class="flex items-center justify-center xl:justify-start">
+                <a class="block w-[80px] h-[80px]" href="#">
+                  <img
+                    src="assets/Logo.png"
+                    alt="Logo"
+                    class="w-full h-full object-contain"
+                  />
+                </a>
+                <h3 class="text-[30px]">Kontrakan H.Indu</h3>
+              </div>
+              <p class="mb-8 text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, quibusdam?.
+              </p>
+              <ul
+                class="text-primary flex gap-[54px] justify-center xl:justify-start"
+              >
+                <li>
+                  <a href="" class="ri-facebook-fill"></a>
+                </li>
+                <li>
+                  <a href="" class="ri-instagram-line"></a>
+                </li>
+                <li>
+                  <a href="" class="ri-twitter-x-line"></a>
+                </li>
+                <li>
+                  <a href="" class="ri-whatsapp-line"></a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end"
+            >
+              <div class="footer__item">
+                <h3 class="h3 mb-3">Pages</h3>
+                <ul class="flex flex-col gap-4">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#Informasi">Informasi</a></li>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#FavoriteMenu">Favorite Kontrakan</a></li>
+                  <li><a href="#Reservasi">Penyewaan_kost</a></li>
+                  <li><a href="#Tempat">Alamat</a></li>
+                  <li><a href="#Contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer__item">
+                <h3 class="h3 mb-3">Services</h3>
+                <ul class="flex flex-col gap-4">
+                  <li><a href="#">Pelayanan Ramah</a></li>
+                  <li><a href="#">Penyewaan Kost</a></li>
+                  <li><a href="#">Tempat Penyewaan</a></li>
+                </ul>
+              </div>
+              <div class="footer__item max-w-[260px] mx-auto xl:mx-0">
+                <h3 class="h3 mb-3">Contact</h3>
+                <div class="flex flex-col gap-6 text-[20px]">
+                  <p>4522210037 - Raihan Alfisa Saugi</p>
+                  <p>4522210049 - Gino Putra Widana</p>
+                  <p>4522210111 - Alya Nuryanah Fikri</p>
+                  <p>4522210113 - Delia Kurniasari</p>
+                  <p>4522210132 - Jesha Nova Fitriyanda</p>
+                  <p>(+62)813-1924-0256</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copyright text-center text-lg py-10">
+          Copyright &copy; H.Indu 2024. All rights reserved
+        </p>
+      </footer>
+      <!-- Temporary Div -->
+      <!-- <div class="h-[2000px]"></div> -->
+    </main>
+
+    <!-- Scroll Reveal JS -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- Swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/Tailwind.js"></script>
+    <script>
+      //    function logout() {
+      //   fetch('/logout', {
+      //     method: 'POST',
+      //     credentials: 'include'
+      //   })
+      //   .then(response => {
+      //     if (response.ok) {
+      //       window.location.href = '/login';
+      //     } else {
+      //       console.error('Logout failed');
+      //     }
+      //   })
+      //   .catch(error => console.error('Error:', error));
+      // }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+      <h1 class="text-2xl font-bold mb-6 text-center">Dashboard Kontrakan</h1>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border-collapse">
+          <thead class="bg-gray-800 text-white">
+            <tr class="text-center">
+              <th class="border border-gray-300 px-4 py-2 text-center">ID</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Nama</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">
+                Telephone
+              </th>
+              <th class="border border-gray-300 px-4 py-2 text-center">
+                Alamat Kontrakan
+              </th>
+              <th class="border border-gray-300 px-4 py-2 text-center">Tipe</th>
+              <th class="border border-gray-300 px-4 py-2 text-center">
+                Biaya Sewa
+              </th>
+              <th class="border border-gray-300 px-4 py-2 text-center">
+                Tanggal Mulai
+              </th>
+              <th class="border border-gray-300 px-4 py-2 text-center">
+                Tanggal Akhir
+              </th>
+            </tr>
+          </thead>
+          <tbody id="kontrak-data" class="text-gray-700">
+            <!-- Data will be injected here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center mt-6">
+        <a
+          href="http://localhost:3000"
+          class="inline-block bg-blue-500 text-white py-2 px-4 rounded"
+          >Back To Homepage</a
+        >
+      </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
